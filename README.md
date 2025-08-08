@@ -74,7 +74,15 @@ We used the **IQR method** to detect and cap outliers for each numerical feature
 This prevents extreme values from overly influencing the model.
 
 ---
+## Train-Test Split
+   - 80% training, 20% testing.
+   - Stratified split to maintain class balance in both sets.
 
+---
+## Feature Scaling & Encoding*
+   - **StandardScaler** for numerical columns.
+   - **OneHotEncoder** for categorical columns (drop first to avoid dummy trap).
+   - Applied **only after splitting** to avoid data leakage.
 
 ## 🗂 Artifacts
 All generated plots and reports are stored in the [`artifacts/`](artifacts/) folder for reference.
