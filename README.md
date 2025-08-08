@@ -97,6 +97,37 @@ We trained a **Logistic Regression** model after:
 - Scaling numerical features
 - Encoding categorical variables
 - Handling class imbalance with SMOTE
+---
+## 📊 Model Evaluation
+
+### 1. Confusion Matrix (Threshold = 0.5)
+![Confusion Matrix](../artifacts/confusion_matrix_default.png)
+
+### 2. ROC Curve
+![ROC Curve](../artifacts/roc_curve.png)
+
+**ROC-AUC Score:** 0.95 
+**Precision:** 0.63 
+**Recall:** 0.91
+
+### 3. Threshold Tuning
+We analyzed precision & recall at different thresholds:
+
+![Precision-Recall vs Threshold](../artifacts/precision_recall_threshold.png)  
+
+Best threshold found: **0.6**, which balances precision and recall.
+
+---
+
+## 🧠 How Logistic Regression Decides
+Logistic regression uses the **sigmoid function** to map predictions to probabilities between 0 and 1:
+
+\[
+\sigma(z) = \frac{1}{1 + e^{-z}}
+\]
+
+By default, the threshold is **0.5**, but we can adjust it for better performance in imbalanced datasets.
+
 
 
 ## 🗂 Artifacts
