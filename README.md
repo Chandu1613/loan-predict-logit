@@ -101,10 +101,10 @@ We trained a **Logistic Regression** model after:
 ## 📊 Model Evaluation
 
 ### 1. Confusion Matrix (Threshold = 0.5)
-![Confusion Matrix](../artifacts/confusion_matrix_default.png)
+![Confusion Matrix](artifacts/confusion_matrix_default.png)
 
 ### 2. ROC Curve
-![ROC Curve](../artifacts/roc_curve.png)
+![ROC Curve](artifacts/roc_curve.png)
 
 **ROC-AUC Score:** 0.95 
 **Precision:** 0.63 
@@ -113,7 +113,7 @@ We trained a **Logistic Regression** model after:
 ### 3. Threshold Tuning
 We analyzed precision & recall at different thresholds:
 
-![Precision-Recall vs Threshold](../artifacts/precision_recall_threshold.png)  
+![Precision-Recall vs Threshold](artifacts/precision_recall_threshold.png)  
 
 Best threshold found: **0.6**, which balances precision and recall.
 
