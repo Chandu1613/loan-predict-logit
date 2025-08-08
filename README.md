@@ -84,5 +84,10 @@ This prevents extreme values from overly influencing the model.
    - **OneHotEncoder** for categorical columns (drop first to avoid dummy trap).
    - Applied **only after splitting** to avoid data leakage.
 
+---
+## Handling Class Imbalance
+   - Used **SMOTE** (Synthetic Minority Oversampling Technique) on the training set.
+   - Balanced class distribution before feeding into Logistic Regression.
+
 ## 🗂 Artifacts
 All generated plots and reports are stored in the [`artifacts/`](artifacts/) folder for reference.
