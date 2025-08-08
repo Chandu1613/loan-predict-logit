@@ -88,6 +88,16 @@ This prevents extreme values from overly influencing the model.
 ## Handling Class Imbalance
    - Used **SMOTE** (Synthetic Minority Oversampling Technique) on the training set.
    - Balanced class distribution before feeding into Logistic Regression.
+---
+
+## Model Training — Logistic Regression
+
+We trained a **Logistic Regression** model after:
+- Cleaning & preprocessing the dataset
+- Scaling numerical features
+- Encoding categorical variables
+- Handling class imbalance with SMOTE
+
 
 ## 🗂 Artifacts
 All generated plots and reports are stored in the [`artifacts/`](artifacts/) folder for reference.
