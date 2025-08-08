@@ -54,6 +54,26 @@ Below are boxplots highlighting outliers for each numerical feature.
 
 **Summary of Outliers (Count per Feature)**  
 See [`artifacts/outlier_report.txt`](artifacts/outlier_report.txt) for the number of detected outliers per numerical column.
+---
+
+## 📈 Skewness Handling
+We measured skewness for each numerical feature and applied **Yeo-Johnson transformation** to normalize distributions.  
+This helps Logistic Regression perform better.
+
+**Before Transformation:**  
+Highly skewed distributions were present in `person_income`, `loan_amnt`, and `credit_score`.
+
+**After Transformation:**  
+![Histograms After Transformation](artifacts/histograms_after_transformation.png)  
+All numerical features now show a more symmetric distribution.
+
+---
+
+## 🚨 Outlier Treatment
+We used the **IQR method** to detect and cap outliers for each numerical feature.  
+This prevents extreme values from overly influencing the model.
+
+---
 
 
 ## 🗂 Artifacts
